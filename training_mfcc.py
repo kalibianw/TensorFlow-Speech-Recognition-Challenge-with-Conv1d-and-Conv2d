@@ -1,5 +1,6 @@
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.utils import to_categorical
+import winsound as ws
 import numpy as np
 
 from utils import TrainModule
@@ -27,3 +28,5 @@ tm_mfcc.training(
     x_test=x_test,
     y_test=y_test
 )
+
+ws.Beep(2000, 1000)

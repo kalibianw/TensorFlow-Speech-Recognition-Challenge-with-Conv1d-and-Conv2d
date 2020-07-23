@@ -28,3 +28,5 @@ tm_mfcc.training(
     x_test=x_test,
     y_test=y_test
 )
+
+ws.Beep(2000, 1000)
